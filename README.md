@@ -1,4 +1,4 @@
-# tesseract-train-receipt
+# tesseract-training-receipt
 training tesseract ocr to recognize brazilian receipts
 
 To put new tesseract training on tesseract move file ftc.traineddata to tessdata folder and use the follow command:
