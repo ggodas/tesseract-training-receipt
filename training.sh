@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#convert -density 300 -depth 4 lang.font-name.exp0.pdf lang.font-name.exp0.tif
+
 tesseract ftc.bematech.exp0.tif ftc.bematech.exp0.box box.train.stderr
 tesseract ftc.sweda.exp0.tif ftc.sweda.exp0.box box.train.stderr
 unicharset_extractor ftc.bematech.exp0.box ftc.sweda.exp0.box
