@@ -22,6 +22,10 @@ mv normproto ftc.normproto
 mv inttemp ftc.inttemp
 mv pffmtable ftc.pffmtable
 
+wordlist2dawg Corretivo ftc.freq-dawg ftc.unicharset
+
 combine_tessdata ftc.
 
 cp ftc.traineddata /usr/local/Cellar/tesseract/3.02.02_3/share/tessdata/
+
+scp -i ../../cert/ftccards.pem  ftc.traineddata ubuntu@54.94.198.199:/home/ubuntu/
